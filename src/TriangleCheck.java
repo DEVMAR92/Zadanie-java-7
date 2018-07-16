@@ -13,9 +13,7 @@ public class TriangleCheck {
     public boolean isRightTriangleBoolean (Triangle triangle){
         boolean result = (triangle.getFirstSide() * triangle.getFirstSide()) + (triangle.getSecondSide() * triangle.getSecondSide()) ==
                 (triangle.getThirdSide() * triangle.getThirdSide());
-        if (result) return true;
-        else {
-            return false;
+        return result;
         }
     }
-}
+
